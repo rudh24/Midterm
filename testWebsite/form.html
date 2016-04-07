@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form</title>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Custom Login Form Styling with CSS3" />
+        <meta name="keywords" content="css3, login, form, custom, input, submit, button, html5, placeholder" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script type="text/javascript">
+         <!--
+            function foo(obj) {
+               var val;
+               if(obj.value.localeCompare("Submit") == 0){
+                   val="Success";
+               }
+               else{
+                   val="Cancelled";
+               }
+               window.location="result.html?val="+val;
+            }
+         //-->
+        </script>
+		<!--[if lte IE 7]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
+        
+		<style>
+			
+			div{
+				border:1px solid black;
+				align:center;
+				margin-left:20%;
+				margin-right:20%;
+				padding:10px;
+			}
+			.first{
+				width:150px;
+			}
+			td{
+				padding-bottom:3%;
+			}
+			#address{
+				width:240px;
+				line-height: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h2 align="center">
+				APPLICATION FORM
+			</h2>
+		</div>
+		<div>
+            <form class="cform">
+				<table width="100%">
+					<tr>
+						<td class="first">
+							<span id="title">
+								1. Title:
+							</span>
+						</td>
+						<td>
+							<input type="radio" name="title" value="mr">Mr.
+							<input type="radio" name="title" value="ms">Ms.
+							<input type="radio" name="title" value="dr">Dr.
+							<input type="radio" name="title" value="prof">Prof.
+							<input type="radio" name="title" value="HH">HH
+								
+						</td>	
+					</tr>
+					<tr>
+						<td class="first">
+							2. Last Name:
+						</td>
+						<td>
+							<input type="text" name="lname" size="30">
+						</td>
+					</tr>
+					<tr>
+						<td class="first">
+							3. First Name:
+						</td>
+						<td>
+							<input type="text" name="fname" size="30">
+						</td>
+					</tr>
+						<td id="first">
+							4. Position Held:
+						</td>
+					</tr>
+					<tr>
+						<td class="first">
+							&nbsp;&nbsp;Designation:
+						</td>
+					<td>
+						<input type="text" name="fname" size="30">
+					</td>
+					</tr>
+					<tr>
+						<td class="first">
+							&nbsp;&nbsp;Department:
+						</td>
+					<td>
+						<input type="text" name="fname" size="30">
+					</td>
+					</tr>
+					<tr>
+						<td class="first">
+							&nbsp;&nbsp;Organisation:
+						</td>
+					<td>
+						<input type="text" name="fname" size="30">
+					</td>
+					</tr>
+					<tr>
+						<td class="first" valign="top">
+							&nbsp;&nbsp;Address:
+						</td>
+					<td>
+						<input id="address" type="text" name="fname" >
+					</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							5. Please indicate the product(s) you would be interested. (Tick all the boxes that apply).
+							<br>
+							<table>
+								<tr>
+									<td>
+										<input type="checkbox" name="product" value="cs">Computer Systems
+									</td>
+									<td>
+										<input type="checkbox" name="product" value="os">Operating Systems
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="checkbox" name="product" value="p">Peripherals
+									</td>
+									<td>
+										<input type="checkbox" name="product" value="gs">Graphics Software
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							6. What is the likely period of your purchasing one or more of the above products?(Check only one box). 
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="time" value="imd">Immediately
+							&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="time" value="one3m">1 to 3 months
+							&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="time" value="sixm">Within 6 months
+							&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="time" value="oneyear">Within 1 year
+						</td>
+					</tr>
+					<tr align="center">
+						<td colspan="2">
+							<button type="button" value="Submit" onclick="foo(this)">Submit</button>
+							&nbsp;&nbsp;
+							<button type="button" onclick="foo(this)">Cancel</button>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</tr>
+	</table>
+	</body>
+</html>
